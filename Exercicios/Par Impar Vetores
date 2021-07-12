@@ -1,0 +1,39 @@
+algoritmo "semnome"
+
+var
+
+val: vetor [1..7] de inteiro
+i, tp: inteiro
+
+inicio
+
+
+///////////////////////////////////////////////////////////
+
+tp <- 0
+
+///////////////////////////////////////////////////////////
+
+Para i <- 1 ate 7 faca
+   escreval ("Digite o",i,"º Valor:")
+   leia (val[i])
+   se(val[i]% 2 = 0) entao
+      tp <- tp + 1
+   fimse
+Fimpara
+
+///////////////////////////////////////////////////////////
+
+escreval ("TOTAL DE PARES FOI", tp)
+
+///////////////////////////////////////////////////////////
+
+Para i <- 1 ate 7 faca
+   se (val[i] % 2=0) entao
+      escreval ("VALOR PAR NA POSIÇÃO", i)
+   fimse
+fimpara
+
+/////////////////////////////////////////////////////////////
+
+fimalgoritmo

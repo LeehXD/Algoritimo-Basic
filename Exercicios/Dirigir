@@ -1,0 +1,35 @@
+algoritmo "Dirigir"
+
+var
+
+anoa, anon, idade :inteiro
+
+inicio
+
+//////////////////////////////////////////
+
+escreva("Em que ano estamos?")
+leia (anoa)
+
+//////////////////////////////////////////
+
+escreva ("Em que ano você nasceu?")
+leia (anon)
+
+//////////////////////////////////////////
+
+idade <-  anoa - anon
+
+//////////////////////////////////////////
+
+se idade >=18 entao
+   escreval ("Você está apto para dirigir")
+
+senao
+   escreval ("Você não está apto para dirigir")
+
+fimse
+
+//////////////////////////////////////////
+
+fimalgoritmo

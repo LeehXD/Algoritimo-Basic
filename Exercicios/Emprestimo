@@ -1,0 +1,29 @@
+algoritmo "semnome"
+
+var
+
+emprestimo, juros, parcelas: real
+
+inicio
+
+///////////////////////////////////////////////
+
+escreva ("Qual o valor do empréstimo?")
+leia(emprestimo)
+
+///////////////////////////////////////////////
+
+escreva ("Qual o valor de parcelas?")
+leia (parcelas)
+
+///////////////////////////////////////////////
+
+juros <- (emprestimo * 20)/100
+
+///////////////////////////////////////////////
+
+escreval ("Ficará", parcelas, " parcelas de R$", (juros+emprestimo)/parcelas," valor total R$",emprestimo+juros)
+
+///////////////////////////////////////////////
+
+fimalgoritmo

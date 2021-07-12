@@ -1,0 +1,43 @@
+algoritmo "semnome"
+
+var
+
+n,contador, salto: inteiro
+
+inicio
+
+///////////////////////////////////////////////
+
+Escreval("-----------------------")
+Escreval("QUER CONTAR ATÉ QUANTO?")
+Escreval("-----------------------")
+leia (n)
+
+///////////////////////////////////////////////
+
+Escreval("---------------------------")
+Escreval("QUAL SERÁ O VALOR DO SALTO?")
+Escreval("---------------------------")
+leia (salto)
+Escreval("-----------------------")
+
+///////////////////////////////////////////////
+
+contador <- 1
+
+///////////////////////////////////////////////
+
+enquanto ( contador <= n) faca
+   escreval (contador)
+   contador <- contador + salto
+fimenquanto
+
+///////////////////////////////////////////////
+
+Escreval("-------------------")
+escreval ("TERMINEI DE CONTAR")
+Escreval("-------------------")
+
+///////////////////////////////////////////////
+
+fimalgoritmo

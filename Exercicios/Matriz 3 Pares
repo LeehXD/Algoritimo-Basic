@@ -1,0 +1,46 @@
+algoritmo "semnome"
+
+var
+
+Valores: vetor [1..3, 1..3] de inteiro
+l ,c, tp : inteiro
+
+inicio
+
+////////////////////////////////////////////////////////////////
+
+para l <- 1 ate 3 faca
+   para c <- 1 ate 3 faca
+      escreval ("DIGITE O VALOR DA POSIÇÃO [",l," /",c, "]:")
+      leia (Valores [l,c])
+   fimpara
+fimpara
+
+////////////////////////////////////////////////////////////////
+
+tp <- 0
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+para l <- 1 ate 3 faca
+   para c <- 1 ate 3 faca
+      se (Valores[l,c]) %2 = 0 entao
+         escreva ("{",Valores[l,c]:2,"}")
+         tp <- tp +1
+      senao
+         escreva (Valores[l,c]:4)
+
+         escreva (Valores [l,c]:3)
+      fimse
+   fimpara
+     escreval()
+fimpara
+
+////////////////////////////////////////////////////////////////
+
+escreval()
+escreval ("VALORES PARES", tp)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+fimalgoritmo

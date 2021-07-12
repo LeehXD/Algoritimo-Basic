@@ -1,0 +1,53 @@
+algoritmo "semnome"
+
+var
+
+D, valor:inteiro
+
+inicio
+
+///////////////////////////////////////////////
+
+escreval ("-------------------")
+Escreval ("QUANTO DESEJA DOAR?")
+escreval ("-------------------")
+Escreval ("[1] Para doar R$10")
+Escreval ("[2] Para doar R$25")
+Escreval ("[3] Para doar R$50")
+Escreval ("[4] Para doar outros valores ")
+Escreval ("[5] Para cancelar")
+Leia (D)
+
+///////////////////////////////////////////////
+
+valor <- 50
+
+escolha D
+
+caso 1
+   valor <- 10
+
+caso 2
+   valor <- 25
+
+caso 3
+   valor <- 50
+
+caso 4
+   escreva ("Qual valor da doação?")
+   leia (valor)
+
+caso 5
+   valor <- 0
+
+fimescolha
+
+///////////////////////////////////////////////
+
+escreval ("----------------------------------------")
+escreval ("Sua doação foi de R$",valor, ", Muito obrigado!")
+escreval ("----------------------------------------")
+
+///////////////////////////////////////////////
+
+fimalgoritmo

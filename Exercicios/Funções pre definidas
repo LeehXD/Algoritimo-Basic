@@ -1,0 +1,34 @@
+algoritmo "semnome"
+
+var
+
+N: caractere
+C: inteiro
+
+inicio
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      Escreval ("DIGITE SEU NOME:")
+      Leia (N)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      
+                    Escreval ("TOTAL DE LETRAS:", compr(N))
+                    Escreval ("NOME EM LETRAS MAIUSCULAS:", maiusc (N))
+                    Escreval ("NOME EM LETRAS MINUSCULAS:", minusc (N))
+                    Escreval ("A PRIMEIRA LETRA DO SEU NOME:", copia (N ,1 ,1))
+                    Escreval ("A ULTIMA LETRA DO SEU NOME:", copia (N, compr (N), 1))
+                    Escreval ("LETRA (A) NA POSIÇÃO:", pos ("A", maiusc (N)))
+                    Escreval ("CÓDIGO DA LETRA (A):", asc ("A"))
+                    Escreval ("CÓDIGO 65 SE REFERE A LETRA:", carac (65))
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    
+                     PARA C <-  COMPR (N) ATE 1 PASSO -1 FACA
+                          Escreva (COPIA(MAIUSC(N),c,1))
+                     FIMPARA
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+fimalgoritmo

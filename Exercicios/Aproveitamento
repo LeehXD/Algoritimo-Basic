@@ -1,8 +1,10 @@
 algoritmo "Aproveitamento"
 
 var
+
 nome,status: caractere
 n1,n2,media: REAL
+
 inicio
 /////////////////////////////////////////////////
 
