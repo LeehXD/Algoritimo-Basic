@@ -1,0 +1,42 @@
+algoritmo "Convertido Dollar 1.0"
+
+var
+
+contador, reais, dollar: real
+
+inicio
+
+//////////////////////////////////////////
+
+contador <- 1
+
+//////////////////////////////////////////
+
+enquanto (contador <= 5) faca
+
+//////////////////////////////////////////
+
+   escreval ("---------------------------")
+   escreval ("DIGITE UM VALOR EM REAIS")
+   escreval ("---------------------------")
+   escreva ("R$")
+   leia (reais)
+
+//////////////////////////////////////////
+
+   dollar <- reais*4.91
+
+//////////////////////////////////////////
+
+   escreval ("----------------------------------------")
+   escreval ("O VALOR CONVERTIDO EM DOLLAR É U$",dollar)
+   escreval ("----------------------------------------")
+   contador <- contador + 1
+
+//////////////////////////////////////////
+
+fimenquanto
+
+//////////////////////////////////////////
+
+fimalgoritmo

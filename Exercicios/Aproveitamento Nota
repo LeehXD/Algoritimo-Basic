@@ -1,0 +1,68 @@
+algoritmo "Aproveitamento Nota"
+
+var
+
+nome, aproveitamento: caractere
+contador, vezes, nota: inteiro
+
+inicio
+///////////////////////////////////////////////
+
+contador <- 1
+
+///////////////////////////////////////////////
+
+escreval ("----------------------------")
+escreval ("QUANTOS ALUNOS TEM NA TURMA?")
+escreval ("----------------------------")
+leia (vezes)
+
+enquanto (contador <= vezes)  faca
+
+///////////////////////////////////////////////
+
+   escreval ("--------------------")
+   escreval ("QUAL O NOME DO ALUNO?")
+   escreval ("--------------------")
+   leia (nome)
+   escreval ("---------------------")
+   escreval ("QUAL A NOTA DO ALUNO?")
+   escreval ("---------------------")
+   leia (nota)
+
+   se (nota >9) entao
+      aproveitamento <-"(A)"
+   senao
+      se (nota>7) e (nota<=8)entao
+         aproveitamento <-"(B)"
+      senao
+         se (nota>6) e (nota<=7) entao
+            aproveitamento <-"(C)"
+         senao
+            se(nota>5) e (nota<=6) entao
+               aproveitamento <-"(D)"
+            senao
+               se(nota>4) e (nota<=5) entao
+                  aproveitamento <-"(E)"
+               senao
+                  aproveitamento <-"(F)"
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+
+///////////////////////////////////////////////
+
+   escreval ("---------------------")
+   escreval ("ALUNO:", nome)
+   escreval ("NOTA:", nota)
+   escreval ("APROVEITAMENTO:", aproveitamento)
+   escreval ("---------------------")
+
+   contador <- contador + 1
+
+   ///////////////////////////////////////////////
+
+fimenquanto
+fimalgoritmo

@@ -1,0 +1,27 @@
+algoritmo "Contador Vetor"
+
+var
+
+v: vetor [1..6] de inteiro
+c: inteiro
+
+inicio
+
+//////////////////////////////////////////
+
+Para c <- 1 ate 6 faca
+
+       escreval ("DIGITE O", C,"º VALOR")
+              leia (v[c])
+fimpara
+
+//////////////////////////////////////////
+
+Para C <- 1 Ate 6 Faca
+
+       escreva("{",v[c]," }")
+fimpara
+
+//////////////////////////////////////
+
+fimalgoritmo

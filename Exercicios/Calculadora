@@ -1,0 +1,62 @@
+algoritmo "Calculadora"
+// Função : Calculadora Basica
+// Autor : Leticia Jordão
+// Data : 10/07/2021
+var
+
+N1, N2, Result: Real
+Operacao: Caractere
+
+inicio
+
+///////////////////////////////////////////////
+
+Escreval ("----------------------------------")
+Escreval ("Digite um numero:")
+Escreval ("----------------------------------")
+Leia (N1)
+
+///////////////////////////////////////////////
+
+Escreval ("----------------------------------")
+Escreval ("Digite a Operação (+) (-) (*) (/) ")
+Escreval ("----------------------------------")
+Leia (Operacao)
+
+///////////////////////////////////////////////
+
+Escreval ("----------------------------------")
+Escreval ("Digite um numero:")
+Escreval ("----------------------------------")
+Leia (N2)
+
+///////////////////////////////////////////////
+
+escolha Operacao
+
+ caso "+"
+   Result <- N1+N2
+ caso "-"
+  Result <- N1-N2
+ caso "*"
+  Result <- N1*N2
+ caso "/"
+  Result <- N1/N2
+  
+fimescolha
+
+///////////////////////////////////////////////
+
+limpatela
+
+///////////////////////////////////////////////
+
+Escreval ("----------------------------------")
+Escreval ("            RESULTADO             ")
+Escreval ("----------------------------------")
+Escreval (N1," ",Operacao,N2," =",Result)
+Escreval ("----------------------------------")
+
+///////////////////////////////////////////////
+
+fimalgoritmo

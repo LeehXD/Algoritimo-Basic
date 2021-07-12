@@ -1,0 +1,56 @@
+algoritmo "Aproveitamento"
+
+var
+nome,status: caractere
+n1,n2,media: REAL
+inicio
+/////////////////////////////////////////////////
+
+escreva ("Qual seu nome?")
+leia(nome)
+escreva ("Qual sua 1º nota?")
+leia (n1)
+escreva ("Qual sua 2º nota?")
+leia (n2)
+
+/////////////////////////////////////////////////
+
+media <- (n1+n2) /2
+
+/////////////////////////////////////////////////
+
+se (media >9) entao
+   status<-"(A)"
+senao
+   se (media>7) e (media<=8)entao
+      status<-"(B)"
+   senao
+      se (media>6) e (media<=7)entao
+         status<-"(C)"
+      senao
+         se(media>5) e (media<=6) entao
+            status<-"(D)"
+         senao
+            se(media>4) e (media<=5) entao
+               status<-"(E)"
+            senao
+               status<-"(F)"
+
+
+            fimse
+         fimse
+      fimse
+   fimse
+fimse
+
+/////////////////////////////////////////////////
+
+escreval ("--------------------------------")
+escreval ("AULUNO(A)",nome)
+escreval ("MEDIA:", media)
+escreval ("STATUS DE APROVEITAMENTO:",status)
+escreval ("--------------------------------")
+
+/////////////////////////////////////////////////
+
+fimalgoritmo

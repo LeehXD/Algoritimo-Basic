@@ -1,0 +1,49 @@
+algoritmo "Conte"
+
+var
+
+numero,soma,quant,resp: inteiro
+
+inicio
+
+//////////////////////////////////////////
+
+soma <- 0
+resp <- 1
+
+//////////////////////////////////////////
+
+   escreval ("-------------------------------------")
+   escreval ("Digite quantas vezes quer executar =>")
+   escreval ("-------------------------------------")
+   leia (quant)
+
+//////////////////////////////////////////
+   
+enquanto (resp <= quant) faca
+
+//////////////////////////////////////////
+
+   escreval ("------------------")
+   escreval ("Digite um valor =>")
+   escreval ("------------------")
+   leia (numero)
+   
+//////////////////////////////////////////
+
+   soma <- soma+numero
+   resp <- resp +1
+
+//////////////////////////////////////////
+   
+fimenquanto
+
+//////////////////////////////////////////
+
+escreval ("---------------------------------")
+escreval ("A soma de todos os valore é =>", soma)
+escreval ("---------------------------------")
+
+//////////////////////////////////////////
+
+fimalgoritmo

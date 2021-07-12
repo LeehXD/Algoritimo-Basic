@@ -1,0 +1,58 @@
+algoritmo "Contador Inteligente"
+
+var
+
+iniciu, fim,contador : inteiro
+
+inicio
+
+///////////////////////////////////////////////
+
+escreval("-------")
+escreval ("INICIO:")
+escreval("-------")
+leia (iniciu)
+
+///////////////////////////////////////////////
+
+escreval("-------")
+escreval ("FIM:")
+escreval("-------")
+leia (fim)
+
+///////////////////////////////////////////////
+
+se (iniciu < fim) entao
+   contador <- iniciu
+   escreval("--------")
+   escreval("CONTANDO")
+   escreval("--------")
+
+///////////////////////////////////////////////
+
+   enquanto (contador <= fim) faca
+      escreval (contador,"...")
+      contador <- contador  +1
+   fimenquanto
+
+/////////////////////////////////////////////// 
+
+senao
+   contador <- iniciu
+
+///////////////////////////////////////////////
+
+   escreval("--------")
+   escreval("CONTANDO")
+   escreval("--------")
+
+   enquanto (contador >= fim) faca
+      escreval(contador,"...")
+      contador <- contador - 1
+
+   fimenquanto
+fimse
+
+///////////////////////////////////////////////
+
+fimalgoritmo

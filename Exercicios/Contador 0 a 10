@@ -1,0 +1,44 @@
+algoritmo "Contador"
+var
+
+RESPOSTA: caractere
+
+inicio
+///////////////////////////////////////////////
+
+repita
+
+///////////////////////////////////////////////
+
+   ESCREVAL ("============")
+   ESCREVAL ("  CONTADOR  ")
+   ESCREVAL ("============")
+   ESCREVAL ("[A] 1 ATÉ 10")
+   ESCREVAL ("[B] 10 ATÉ 1")
+   ESCREVAL ("[C] SAIR    ")
+   ESCREVAL ("============")
+   LEIA (RESPOSTA)
+
+///////////////////////////////////////////////
+
+   se (resposta = "A")entao
+      ESCREVAL ("======================================")
+      escreval ("CONTANDO 1, 2, 3, 4, 5, 6, 7, 8, 9, 10")
+      ESCREVAL ("======================================")
+   senao
+      se (resposta = "B")entao
+         ESCREVAL ("======================================")
+         escreval ("CONTANDO 10, 9, 8, 7, 6, 5, 4, 3, 2, 1")
+         ESCREVAL ("======================================")
+      senao
+
+      fimse
+   fimse
+
+///////////////////////////////////////////////
+
+ate (RESPOSTA = "C")
+
+///////////////////////////////////////////////
+
+fimalgoritmo

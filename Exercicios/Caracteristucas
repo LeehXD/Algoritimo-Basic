@@ -1,0 +1,77 @@
+algoritmo "Caracteristicas"
+
+var
+
+sexo, cabelo, continua: caractere
+idade, req_f, req_m, req18, req25: inteiro
+
+inicio
+
+repita
+
+ ///////////////////////////////////////////////
+
+   escreval ("=======================")
+   escreval ("    CARACTERISTICAS    ")
+   escreval ("=======================")
+   escreval ("- QUAL SEU SEXO? [F/M] ")
+   escreval ("=======================")
+   leia (sexo)
+
+ ///////////////////////////////////////////////
+   escreval ("=======================")
+   escreval ("- QUAL SUA IDADE?")
+   escreval ("=======================")
+   leia (idade)
+
+ ///////////////////////////////////////////////
+
+   escreval ("=======================")
+   escreval (" QUAL A COR DO CABELO? ")
+   escreval ("=======================")
+   escreval ("[1] PRETO")
+   escreval ("[2] CASTANHO")
+   escreval ("[3] LOIRO")
+   escreval ("[4] RUIVO")
+   escreval ("=======================")
+   leia (cabelo)
+
+ ///////////////////////////////////////////////
+
+   escreval ("=======================")
+   escreval (" QUER CONTINUAR? [S/N] ")
+   escreval ("=======================")
+   leia (continua)
+
+ ///////////////////////////////////////////////
+
+   se (sexo = "F") e (idade > 18) e (cabelo = 2)entao
+      req18 <- req18 +1
+   fimse
+   se (sexo = "M") e (idade >= 25) e (idade <= 30) e (cabelo = 3) entao
+      req25 <- req25 + 1
+   fimse
+
+ ///////////////////////////////////////////////
+
+   limpatela
+
+ ///////////////////////////////////////////////
+
+ ate (continua = "N")
+
+ ///////////////////////////////////////////////
+
+escreval ("==========================================================")
+escreval ("TOTAL DE HOMENS COM MAIS DE 18 E CABELOS CASTANHOS", req25)
+escreval ("==========================================================")
+
+///////////////////////////////////////////////
+
+escreval ("==========================================================")
+escreval ("TOTAL DE MULHERES ENTRE 25 E 30 ANOS E CABELOS LOIROS", req18)
+escreval ("==========================================================")
+
+///////////////////////////////////////////////
+
+fimalgoritmo

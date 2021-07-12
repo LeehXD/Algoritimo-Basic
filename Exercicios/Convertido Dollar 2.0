@@ -1,0 +1,51 @@
+algoritmo "Convertido Dolar 2.0"
+
+var
+
+contador, reais, dollar, vezes: real
+
+inicio
+
+//////////////////////////////////////////
+
+escreval ("------------------------------------")
+escreval ("DIGITE QUANTAS VEZES QUER CONVERTER:")
+escreval ("------------------------------------")
+leia (vezes)
+
+//////////////////////////////////////////
+
+contador <- 1
+
+ //////////////////////////////////////////
+
+enquanto (contador <= vezes) faca
+
+ //////////////////////////////////////////
+
+   escreval ("---------------------------")
+   escreval ("DIGITE UM VALOR EM REAIS")
+   escreval ("---------------------------")
+   escreva ("R$")
+   leia (reais)
+
+ //////////////////////////////////////////
+
+   dollar <- reais*4.91
+
+ //////////////////////////////////////////
+   
+   escreval ("----------------------------------------")
+   escreval ("O VALOR CONVERTIDO EM DOLLAR É U$",dollar)
+   escreval ("----------------------------------------")
+
+ //////////////////////////////////////////
+   
+   contador <- contador + 1
+
+ //////////////////////////////////////////
+
+fimenquanto
+
+//////////////////////////////////////////
+fimalgoritmo
