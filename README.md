@@ -1,2 +1,2 @@
 # Algoritimo-Basico
- Repositorio de exercicios resolvidos em Algoritomo utilizando Visualg.
+ Repositorio de exercicios resolvidos em Algoritomo.
